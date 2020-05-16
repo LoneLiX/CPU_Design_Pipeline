@@ -1,0 +1,57 @@
+D:/CPU_Design_Pipeline/EXT8_16.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/EXT8_16.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module EXT8_16
+
+Top level modules:
+	EXT8_16
+
+} {} {}} D:/CPU_Design_Pipeline/AND.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/AND.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module AND
+
+Top level modules:
+	AND
+
+} {} {}} D:/CPU_Design_Pipeline/PCPLUS.v {1 {vlog -work work -vopt -stats=none {D:\CPU_Design_Pipeline\PCPLUS.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module PCPLUS
+
+Top level modules:
+	PCPLUS
+
+} {} {}} D:/CPU_Design_Pipeline/PC.v {1 {vlog -work work -vopt -stats=none {D:\CPU_Design_Pipeline\PC.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} D:/CPU_Design_Pipeline/EXT5_16.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/EXT5_16.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module EXT5_16
+
+Top level modules:
+	EXT5_16
+
+} {} {}} D:/CPU_Design_Pipeline/ADDER.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/ADDER.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ADDER
+
+Top level modules:
+	ADDER
+
+} {} {}} D:/CPU_Design_Pipeline/MUX2_1.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/MUX2_1.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module MUX2_1
+
+Top level modules:
+	MUX2_1
+
+} {} {}} D:/CPU_Design_Pipeline/EXT11_16.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/EXT11_16.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module EXT11_16
+
+Top level modules:
+	EXT11_16
+
+} {} {}}
