@@ -8,30 +8,74 @@ z2
 !i10f 100
 cModel Technology
 dD:/CPU_Design
-vADDER
-Z0 !s110 1589507288
+vADD11_16
+Z0 !s110 1589638484
 !i10b 1
-!s100 8g5Hg2>CkO_YQ>lLj6J?U0
-Iz;fE9mQV2nc]m:LcC6U^c2
+!s100 n?4YF01aTO:iSf6PKi5M90
+I;Xb<NHaOgWn_J5`D<C@cR1
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dD:/CPU_Design_Pipeline
-w1588934635
-8D:/CPU_Design_Pipeline/ADDER.v
-FD:/CPU_Design_Pipeline/ADDER.v
+w1589616891
+8D:\CPU_Design_Pipeline\ADD11_16.v
+FD:\CPU_Design_Pipeline\ADD11_16.v
 L0 1
 Z3 OL;L;10.5;63
 r1
 !s85 0
 31
-Z4 !s108 1589507288.000000
-!s107 D:/CPU_Design_Pipeline/ADDER.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/CPU_Design_Pipeline/ADDER.v|
+Z4 !s108 1589638484.000000
+!s107 D:\CPU_Design_Pipeline\ADD11_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:\CPU_Design_Pipeline\ADD11_16.v|
 !i113 0
 Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z6 tCvgOpt 0
+n@a@d@d11_16
+vADD5_16
+R0
+!i10b 1
+!s100 X<mQ7S5?D_zSQTnohXWNE3
+IJ6ibZ3hU:fcEizPid3jfA2
+R1
+R2
+w1589616706
+8D:\CPU_Design_Pipeline\ADD5_16.v
+FD:\CPU_Design_Pipeline\ADD5_16.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:\CPU_Design_Pipeline\ADD5_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:\CPU_Design_Pipeline\ADD5_16.v|
+!i113 0
+R5
+R6
+n@a@d@d5_16
+vADDER
+Z7 !s110 1589638483
+!i10b 1
+!s100 8g5Hg2>CkO_YQ>lLj6J?U0
+Iz;fE9mQV2nc]m:LcC6U^c2
+R1
+R2
+w1588934635
+8D:/CPU_Design_Pipeline/ADDER.v
+FD:/CPU_Design_Pipeline/ADDER.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1589638483.000000
+!s107 D:/CPU_Design_Pipeline/ADDER.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/CPU_Design_Pipeline/ADDER.v|
+!i113 0
+R5
+R6
 n@a@d@d@e@r
 vAND
-R0
+R7
 !i10b 1
 !s100 Bj6kGkoQbG9be[SZY<2OO1
 I8TZa=XZ4HNd2]fg^<D`YT3
@@ -45,31 +89,53 @@ R3
 r1
 !s85 0
 31
-R4
+R8
 !s107 D:/CPU_Design_Pipeline/AND.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/CPU_Design_Pipeline/AND.v|
 !i113 0
 R5
 R6
 n@a@n@d
-vEXT11_16
-Z7 !s110 1589507289
+vDECODER
+!s110 1589642673
 !i10b 1
-!s100 <ZI7A96N<eQ@k;R:SRbmA2
-I^FDGGc^A2[URRel5S=d;I3
+!s100 23^zS04iPU?]TLABnQP1O1
+ICRFMcPQIZ_alC_g^e9l5X0
 R1
 R2
-w1588934175
-8D:/CPU_Design_Pipeline/EXT11_16.v
-FD:/CPU_Design_Pipeline/EXT11_16.v
+w1589642669
+8D:\CPU_Design_Pipeline\DECODER.v
+FD:\CPU_Design_Pipeline\DECODER.v
 L0 1
 R3
 r1
 !s85 0
 31
-Z8 !s108 1589507289.000000
-!s107 D:/CPU_Design_Pipeline/EXT11_16.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/CPU_Design_Pipeline/EXT11_16.v|
+!s108 1589642673.000000
+!s107 D:\CPU_Design_Pipeline\DECODER.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:\CPU_Design_Pipeline\DECODER.v|
+!i113 0
+R5
+R6
+n@d@e@c@o@d@e@r
+vEXT11_16
+R0
+!i10b 1
+!s100 <ZI7A96N<eQ@k;R:SRbmA2
+I_B^KjV4_=EmEdfb@:=]RT2
+R1
+R2
+w1588934175
+8D:\CPU_Design_Pipeline\EXT11_16.v
+FD:\CPU_Design_Pipeline\EXT11_16.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:\CPU_Design_Pipeline\EXT11_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:\CPU_Design_Pipeline\EXT11_16.v|
 !i113 0
 R5
 R6
@@ -118,8 +184,52 @@ R8
 R5
 R6
 n@e@x@t8_16
-vMUX2_1
+vIF_ID
 R0
+!i10b 1
+!s100 ]HdWB_0Y5O2Jcze9D<R8b2
+IL3b7Y6BcnVSjFRUW=PzE]0
+R1
+R2
+w1589618076
+8D:/CPU_Design_Pipeline/IF_ID.v
+FD:/CPU_Design_Pipeline/IF_ID.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/CPU_Design_Pipeline/IF_ID.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/CPU_Design_Pipeline/IF_ID.v|
+!i113 0
+R5
+R6
+n@i@f_@i@d
+vIMEM
+R0
+!i10b 1
+!s100 SJc5h<lIC2Ha0h_ZnbV=m3
+IEIi6YIjVAEGUF:1=lDWVU3
+R1
+R2
+w1589617062
+8D:\CPU_Design_Pipeline\IMEM.v
+FD:\CPU_Design_Pipeline\IMEM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:\CPU_Design_Pipeline\IMEM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:\CPU_Design_Pipeline\IMEM.v|
+!i113 0
+R5
+R6
+n@i@m@e@m
+vMUX2_1
+R7
 !i10b 1
 !s100 LQ1BQUzm3Z]N4`I_gUM_K2
 IQN`Vh2CNzXk=U8_AP2S220
@@ -133,7 +243,7 @@ R3
 r1
 !s85 0
 31
-R4
+R8
 !s107 D:/CPU_Design_Pipeline/MUX2_1.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/CPU_Design_Pipeline/MUX2_1.v|
 !i113 0
@@ -141,46 +251,68 @@ R5
 R6
 n@m@u@x2_1
 vPC
-R0
+R7
 !i10b 1
 !s100 ObYe[85^bjM@eMe6lY=OD2
-I<<W2nZN6j;7XgQUf`Q`SD3
+I<LBnTG7IHkMS<jAlMPAQT3
 R1
 R2
 w1589457296
-8D:\CPU_Design_Pipeline\PC.v
-FD:\CPU_Design_Pipeline\PC.v
+8D:/CPU_Design_Pipeline/PC.v
+FD:/CPU_Design_Pipeline/PC.v
 L0 1
 R3
 r1
 !s85 0
 31
-R4
-!s107 D:\CPU_Design_Pipeline\PC.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:\CPU_Design_Pipeline\PC.v|
+R8
+!s107 D:/CPU_Design_Pipeline/PC.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/CPU_Design_Pipeline/PC.v|
 !i113 0
 R5
 R6
 n@p@c
 vPCPLUS
-R0
+R7
 !i10b 1
 !s100 9WcnVR[1>3J5IV7In3Vai3
-I1M6=`nZZ^?G4B`I;mM;>n2
+IIkCb5HgdR8n<7<OURIG4F3
 R1
 R2
 w1589457293
-8D:\CPU_Design_Pipeline\PCPLUS.v
-FD:\CPU_Design_Pipeline\PCPLUS.v
+8D:/CPU_Design_Pipeline/PCPLUS.v
+FD:/CPU_Design_Pipeline/PCPLUS.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/CPU_Design_Pipeline/PCPLUS.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/CPU_Design_Pipeline/PCPLUS.v|
+!i113 0
+R5
+R6
+n@p@c@p@l@u@s
+vRG
+R0
+!i10b 1
+!s100 ^Ga?[zn<nfNX>BKk2ej[21
+IzW[0UG_oSSeFkLU8zz7H<1
+R1
+R2
+w1589638040
+8D:\CPU_Design_Pipeline\RG.v
+FD:\CPU_Design_Pipeline\RG.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 D:\CPU_Design_Pipeline\PCPLUS.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:\CPU_Design_Pipeline\PCPLUS.v|
+!s107 D:\CPU_Design_Pipeline\RG.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:\CPU_Design_Pipeline\RG.v|
 !i113 0
 R5
 R6
-n@p@c@p@l@u@s
+n@r@g
