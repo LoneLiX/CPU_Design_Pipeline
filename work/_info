@@ -119,7 +119,7 @@ R5
 R6
 n@a@n@d
 vCONTROL_HARZARD
-!s110 1589654091
+!s110 1589690100
 !i10b 1
 !s100 K_QzPdFQ89jz0DF<nj@[F2
 Ih3NPG^a:073ihF;S[jMES3
@@ -133,13 +133,35 @@ R3
 r1
 !s85 0
 31
-!s108 1589654091.000000
+!s108 1589690100.000000
 !s107 D:/CPU_Design_Pipeline/CONTROL_HAZARD.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/CPU_Design_Pipeline/CONTROL_HAZARD.v|
 !i113 0
 R5
 R6
 n@c@o@n@t@r@o@l_@h@a@r@z@a@r@d
+vDATA_HAZARD
+!s110 1589711743
+!i10b 1
+!s100 kW5bA7niU?A2VIB0?D>=M0
+I4cH<A=>RmJ<1aaD:gl?_=2
+R1
+R2
+w1589711740
+8D:/CPU_Design_Pipeline/DATA_HARZARD.v
+FD:/CPU_Design_Pipeline/DATA_HARZARD.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1589711743.000000
+!s107 D:/CPU_Design_Pipeline/DATA_HARZARD.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/CPU_Design_Pipeline/DATA_HARZARD.v|
+!i113 0
+R5
+R6
+n@d@a@t@a_@h@a@z@a@r@d
 vDECODER
 R0
 !i10b 1
@@ -162,6 +184,28 @@ R4
 R5
 R6
 n@d@e@c@o@d@e@r
+vEX_MEN
+!s110 1589687240
+!i10b 1
+!s100 8El;@NjQ@`Z7VJLRAGdz02
+IZ?Vk<fEKWVLCDJ1D7EjLH2
+R1
+R2
+w1589687237
+8D:/CPU_Design_Pipeline/EX_MEM.v
+FD:/CPU_Design_Pipeline/EX_MEM.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1589687240.000000
+!s107 D:/CPU_Design_Pipeline/EX_MEM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/CPU_Design_Pipeline/EX_MEM.v|
+!i113 0
+R5
+R6
+n@e@x_@m@e@n
 vEXT11_16
 R0
 !i10b 1

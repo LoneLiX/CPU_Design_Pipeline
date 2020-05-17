@@ -1,4 +1,11 @@
-D:/CPU_Design_Pipeline/ALU.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/ALU.v
+D:/CPU_Design_Pipeline/CONTROL_HAZARD.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/CONTROL_HAZARD.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module CONTROL_HARZARD
+
+Top level modules:
+	CONTROL_HARZARD
+
+} {} {}} D:/CPU_Design_Pipeline/ALU.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/ALU.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module ALU
 
@@ -68,19 +75,19 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	ADD11_16
 
-} {} {}} D:/CPU_Design_Pipeline/EXT5_16.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/EXT5_16.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module EXT5_16
-
-Top level modules:
-	EXT5_16
-
 } {} {}} D:/CPU_Design_Pipeline/MUX2_1.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/MUX2_1.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module MUX2_1
 
 Top level modules:
 	MUX2_1
+
+} {} {}} D:/CPU_Design_Pipeline/EXT5_16.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/EXT5_16.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module EXT5_16
+
+Top level modules:
+	EXT5_16
 
 } {} {}} D:/CPU_Design_Pipeline/DECODER.v {1 {vlog -work work -vopt -stats=none {D:\CPU_Design_Pipeline\DECODER.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -96,18 +103,18 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	PCPLUS
 
-} {} {}} D:/CPU_Design_Pipeline/ID_EX.v {1 {vlog -work work -vopt -stats=none {D:\CPU_Design_Pipeline\ID_EX.v}
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module ID_EX
-
-Top level modules:
-	ID_EX
-
 } {} {}} D:/CPU_Design_Pipeline/EXT11_16.v {1 {vlog -work work -vopt -stats=none {D:\CPU_Design_Pipeline\EXT11_16.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module EXT11_16
 
 Top level modules:
 	EXT11_16
+
+} {} {}} D:/CPU_Design_Pipeline/ID_EX.v {1 {vlog -work work -vopt -stats=none {D:\CPU_Design_Pipeline\ID_EX.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ID_EX
+
+Top level modules:
+	ID_EX
 
 } {} {}}
