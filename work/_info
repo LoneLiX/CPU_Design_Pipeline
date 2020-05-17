@@ -382,6 +382,28 @@ R4
 R5
 R6
 n@i@m@e@m
+vMEM_WB
+!s110 1589721702
+!i10b 1
+!s100 <eofY^z2b6GP89NdF`GUz0
+Iaf==>o5BINQK9eiS7SSSf2
+R1
+R2
+w1589721694
+8D:/CPU_Design_Pipeline/MEM_WB.v
+FD:/CPU_Design_Pipeline/MEM_WB.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1589721702.000000
+!s107 D:/CPU_Design_Pipeline/MEM_WB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/CPU_Design_Pipeline/MEM_WB.v|
+!i113 0
+R5
+R6
+n@m@e@m_@w@b
 vMUX2_1
 R7
 !i10b 1
