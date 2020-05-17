@@ -140,6 +140,28 @@ R10
 R5
 R6
 n@c@o@n@t@r@o@l_@h@a@r@z@a@r@d
+vCPU
+!s110 1589742132
+!i10b 1
+!s100 zgYNDJ`0Y;SBTkNQmKnaj0
+IbB0kmAk=YQ7IB^H^PZ??^3
+R1
+R2
+w1589742129
+8D:\CPU_Design_Pipeline\CPU.v
+FD:\CPU_Design_Pipeline\CPU.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1589742132.000000
+!s107 D:\CPU_Design_Pipeline\CPU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:\CPU_Design_Pipeline\CPU.v|
+!i113 0
+R5
+R6
+n@c@p@u
 vDATA_HAZARD
 R9
 !i10b 1
