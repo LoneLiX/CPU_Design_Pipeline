@@ -1,9 +1,9 @@
 D:/CPU_Design_Pipeline/CONTROL_HAZARD.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/CONTROL_HAZARD.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module CONTROL_HARZARD
+-- Compiling module CONTROL_HAZARD
 
 Top level modules:
-	CONTROL_HARZARD
+	CONTROL_HAZARD
 
 } {} {}} D:/CPU_Design_Pipeline/ALU.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/ALU.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -47,12 +47,12 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	ADD5_16
 
-} {} {}} D:/CPU_Design_Pipeline/DATA_HARZARD.v {1 {vlog -work work -vopt -stats=none {D:\CPU_Design_Pipeline\DATA_HARZARD.v}
+} {} {}} D:/CPU_Design_Pipeline/DATA_HARZARD.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/DATA_HARZARD.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module DATA_HAZARD
+-- Compiling module DATA_HARZARD
 
 Top level modules:
-	DATA_HAZARD
+	DATA_HARZARD
 
 } {} {}} D:/CPU_Design_Pipeline/EXT8_16.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/EXT8_16.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -61,19 +61,12 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	EXT8_16
 
-} {} {}} D:/CPU_Design_Pipeline/CPU.v {1 {vlog -work work -vopt -stats=none {D:\CPU_Design_Pipeline\CPU.v}
+} {} {}} D:/CPU_Design_Pipeline/CPU.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/CPU.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module CPU
 
 Top level modules:
 	CPU
-
-} {} {}} D:/CPU_Design_Pipeline/ADDER.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/ADDER.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module ADDER
-
-Top level modules:
-	ADDER
 
 } {} {}} D:/CPU_Design_Pipeline/IMEM.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/IMEM.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -82,19 +75,19 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	IMEM
 
-} {} {}} D:/CPU_Design_Pipeline/RG.v {1 {vlog -work work -vopt -stats=none {D:\CPU_Design_Pipeline\RG.v}
+} {} {}} D:/CPU_Design_Pipeline/ADDER.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/ADDER.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ADDER
+
+Top level modules:
+	ADDER
+
+} {} {}} D:/CPU_Design_Pipeline/RG.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/RG.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module RG
 
 Top level modules:
 	RG
-
-} {} {}} D:/CPU_Design_Pipeline/ADD11_16.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/ADD11_16.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module ADD11_16
-
-Top level modules:
-	ADD11_16
 
 } {} {}} D:/CPU_Design_Pipeline/DMEM.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/DMEM.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -103,13 +96,6 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	DMEM
 
-} {} {}} D:/CPU_Design_Pipeline/EXT5_16.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/EXT5_16.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module EXT5_16
-
-Top level modules:
-	EXT5_16
-
 } {} {}} D:/CPU_Design_Pipeline/MUX2_1.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/MUX2_1.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module MUX2_1
@@ -117,19 +103,19 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	MUX2_1
 
-} {} {}} D:/CPU_Design_Pipeline/DECODER.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/DECODER.v
+} {} {}} D:/CPU_Design_Pipeline/EXT5_16.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/EXT5_16.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module EXT5_16
+
+Top level modules:
+	EXT5_16
+
+} {} {}} D:/CPU_Design_Pipeline/DECODER.v {1 {vlog -work work -vopt -stats=none {D:\CPU_Design_Pipeline\DECODER.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module DECODER
 
 Top level modules:
 	DECODER
-
-} {} {}} D:/CPU_Design_Pipeline/MEM_WB.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/MEM_WB.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module MEM_WB
-
-Top level modules:
-	MEM_WB
 
 } {} {}} D:/CPU_Design_Pipeline/PCPLUS.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/PCPLUS.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -138,12 +124,12 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	PCPLUS
 
-} {} {}} D:/CPU_Design_Pipeline/ID_EX.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/ID_EX.v
+} {} {}} D:/CPU_Design_Pipeline/MEM_WB.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/MEM_WB.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module ID_EX
+-- Compiling module MEM_WB
 
 Top level modules:
-	ID_EX
+	MEM_WB
 
 } {} {}} D:/CPU_Design_Pipeline/EXT11_16.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/EXT11_16.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -151,5 +137,12 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
 Top level modules:
 	EXT11_16
+
+} {} {}} D:/CPU_Design_Pipeline/ID_EX.v {1 {vlog -work work -vopt -stats=none D:/CPU_Design_Pipeline/ID_EX.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ID_EX
+
+Top level modules:
+	ID_EX
 
 } {} {}}

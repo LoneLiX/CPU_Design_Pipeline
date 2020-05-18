@@ -24,7 +24,7 @@ IF_ID ifid(clk,reset,FlushIFID,InsToIFID,AddrToIFID,InsFromIFID,AddrFromIFID);
 wire[4:0] OpcodeToDecoder;
 assign OpcodeToDecoder=InsFromIFID[15:11];
 wire[7:0]ControlsFromDecoder;
-DECODER(OpcodeToDecoder,ControlsFromDecoder);
+DECODER decoder(OpcodeToDecoder,ControlsFromDecoder);
 wire RegWriteFromMEMWB;
 wire RegWriteToRG;
 assign RegWriteToRG=RegWriteFromMEMWB;
@@ -40,19 +40,19 @@ wire[15:0]Data3ToRG;
 assign Data3ToRG=ResultFromMEMWB;
 wire[15:0]Data1FromRG;
 wire[15:0]Data2FromRG;
-RG(clk,Reg1ToRG,Reg2ToRG,Reg3ToRG,Data1FromRG,Data2FromRG,Data3ToRG,RegWriteToRG);
+RG rg(clk,Reg1ToRG,Reg2ToRG,Reg3ToRG,Data1FromRG,Data2FromRG,Data3ToRG,RegWriteToRG);
 wire[4:0]Offset5TOADDER5;
 assign Offset5TOADDER5=InsFromIFID[4:0];
 wire[15:0]AddrToADDER5;
 assign AddrToADDER5=AddrFromIFID;
 wire[15:0]JEQAddrFromADDER5;
-ADDER5_16 JEQADDR(Offset5TOADDER5,AddrToADDER5,JEQAddrFromADDER5);
+ADD5_16 JEQADDR(Offset5TOADDER5,AddrToADDER5,JEQAddrFromADDER5);
 wire[10:0]Offset11TOADDER11;
 assign Offset11TOADDER11=InsFromIFID[10:0];
 wire[15:0]AddrToADDER11;
 assign AddrToADDER11=AddrFromIFID;
-wire JMPAddrFromADDER11;
-ADDER11_16 JMPADDR(Offset11TOADDER11,AddrToADDER11,JMPAddrFromADDER11);
+wire[15:0]JMPAddrFromADDER11;
+ADD11_16 JMPaddr(Offset11TOADDER11,AddrToADDER11,JMPAddrFromADDER11);
 
 wire[7:0]ControlsToIDEX;
 assign ControlsToIDEX=ControlsFromDecoder;
@@ -86,8 +86,9 @@ wire[15:0]Data1ToMux1;
 wire[15:0]Data2ToMux2;
 assign Data1ToMux1=Data1FromIDEX;
 assign Data2ToMux2=Data2FromIDEX;
-wire[15:0]ResultToMux1;   //Data Hazard signal
+wire[15:0]ResultToMux1;   
 wire[15:0]ResultToMux2;
+
 wire SelectMux1;
 wire SelectMux2;
 wire[15:0]Mux1Data1ToALu;
@@ -98,7 +99,7 @@ wire AluopToAlu;
 assign AluopToAlu=ControlsFromIDEX[2];
 wire[15:0]ResultFromAlu;
 wire ZeroFromAlu;
-ALU(Mux1Data1ToALu,Mux2Data2ToALu,AluopToAlu,ResultFromAlu,ZeroFromAlu);
+ALU alu(Mux1Data1ToALu,Mux2Data2ToALu,AluopToAlu,ResultFromAlu,ZeroFromAlu);
 wire[7:0]Imm8ToSEXT8;
 assign Imm8ToSEXT8=Imm8FromIDEX;
 wire[15:0]Imm16FromSEXT8;
@@ -142,6 +143,8 @@ wire[2:0]Reg1FromEXMEM;
 
 EX_MEM exmem(clk,reset,FlushEXMEM,ControlsToEXMEM,ResultToEXMEM,ZeroToEXMEM,DataToEXMEM,MemAddrToEXMEM,JEQAddrToEXMEM,Reg1ToEXMEM,ControlsFromEXMEM,ResultFromEXMEM,ZeroFromEXMEM,DataFromEXMEM,MemAddrFromEXMEM,JEQAddrFromEXMEM,Reg1FromEXMEM);
 
+assign ResultToMux1=ResultFromEXMEM;
+assign ResultToMux2=ResultFromEXMEM;
 //DMEM
 wire ReadToDMEM;
 assign ReadToDMEM=ControlsFromEXMEM[4];
@@ -165,14 +168,14 @@ CONTROL_HAZARD controlhazard(JEQFlag,JMPFlag,FlushIFID,FlushIDEX,FlushEXMEM);
 //DATA HAZARD
 wire EXMEM_WB;
 assign EXMEM_WB=ControlsFromEXMEM[0];
-DATA_HAZARD datahazard(EXMEM_WB,Reg1FromEXMEM,Reg1FromIDEX,Reg2FromIDEX,SelectMux1,SelectMux2);
+DATA_HARZARD datahazard(EXMEM_WB,Reg1FromEXMEM,Reg1FromIDEX,Reg2FromIDEX,SelectMux1,SelectMux2);
 
 wire opToMUXResultorMem;
 assign opToMUXResultorMem=ControlsFromEXMEM[1];//1-result 0-Mem
 wire[15:0]Data0ToMUXResultorMem;
-assign Data0ToMUXResultorMem=ResultFromEXMEM;
+assign Data0ToMUXResultorMem=DataFromDMEM;
 wire[15:0]Data1ToMUXResultorMem;
-assign Data1ToMUXResultorMem=DataFromDMEM;
+assign Data1ToMUXResultorMem=ResultFromEXMEM;
 wire[15:0]DataFromMUXResultorMem;
 MUX2_1 MUXResultorMem(Data0ToMUXResultorMem,Data1ToMUXResultorMem,opToMUXResultorMem,DataFromMUXResultorMem);
 

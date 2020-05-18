@@ -35,7 +35,7 @@ else begin
 R[72:68]<=ControlsIn;
 R[67:52]<=ResultIn;
 R[51]<=ZeroIn;
-R[50:35]<=DataOut;
+R[50:35]<=DataIn;
 R[34:19]<=MemAddrIn;
 R[18:3]<=JEQAddrIn;
 R[2:0]<=Reg1In;

@@ -1,4 +1,4 @@
-module DATA_HAZARD(
+module DATA_HARZARD(
 input EX_MEM_RW,
 input[2:0]EX_MEM_Reg1,
 input[2:0]ID_EX_Reg1,

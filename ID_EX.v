@@ -28,8 +28,20 @@ assign Reg1Out=R[5:3];
 assign Reg2Out=R[2:0];
 
 always@(posedge Clk)
+begin
 if(Reset)R<=0;
 else if(Flush)R<=0;
-else begin R[85:78]<=ControlsIn;R[77:62]<=Data1In;R[61:46]<=Data2In;R[45:30]<=JEQAddrIn;R[29:14]<=JMPAddrIn;R[13:6]<=Imm8In;R[5:3]<=Reg1In;R[2:0]<=Reg2In;end
+else 
+begin 
+R[85:78]<=ControlsIn;
+R[77:62]<=Data1In;
+R[61:46]<=Data2In;
+R[45:30]<=JEQAddrIn;
+R[29:14]<=JMPAddrIn;
+R[13:6]<=Imm8In;
+R[5:3]<=Reg1In;
+R[2:0]<=Reg2In;
+end
+end
 endmodule
 
